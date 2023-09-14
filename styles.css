@@ -44,11 +44,11 @@
     
     .form-elements input[type = 'text'], input[type = 'email'], input[type = 'tel'], input[type = 'password']{
         background-color: #FFFFFF;
-      border: 1px solid #D6D9DC;
-      border-radius: 3px;
-      width: 100%;
-      padding: 7px;
-      font-size: 14px;
+        border: 1px solid #D6D9DC;
+        border-radius: 3px;
+        width: 100%;
+        padding: 7px;
+        font-size: 14px;
     }
     
     .form-elements label{
@@ -124,6 +124,14 @@
     .btn{
         margin-top: 30px;
     }
+
+
+    input:focus{
+        outline: none !important;
+        border:1px solid #55555541;
+        box-shadow: 0 10px 15px rgba(0,0,0,.2);
+    }
+
 
 }
 
