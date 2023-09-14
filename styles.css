@@ -1,6 +1,6 @@
 @font-face {
     font-family: norse;
-    src: url('/Norse-Bold.otf') format("opentype");
+    src: url('./fonts/Norse-Bold.otf') format("opentype");
 }
 
 @media only screen and (max-width: 700px){
@@ -19,7 +19,7 @@
     }
     
     .img-group{
-        background-image: url('/halie-west-25xggax4bSA-unsplash.jpg');
+        background-image: url('./images/halie-west-25xggax4bSA-unsplash.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -143,7 +143,7 @@
     }
 
     .img-group{
-        background-image: url('/halie-west-25xggax4bSA-unsplash.jpg');
+        background-image: url('./images/halie-west-25xggax4bSA-unsplash.jpg');
         background-size:cover;
         width: 900px;
         height: 100vh;
