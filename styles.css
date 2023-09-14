@@ -3,136 +3,288 @@
     src: url('/Norse-Bold.otf') format("opentype");
 }
 
-body{
-    margin: 0;
-}
-
-.img-group{
-    background-image: url('/halie-west-25xggax4bSA-unsplash.jpg');
-    background-size:cover;
-    width: 800px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-.logo{
-    text-align: center;
-    width: 100%;
-    background-color: rgba(0,0,0,.5);
-    color: #fff;
-    margin-bottom: 200px;
-    padding: 20px;
-}
-
-.odin-logo{
-    width: 100px;
-    height: 130px;
-}
-
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    font-family: norse;
-    font-size: 100px;
-}
-
-.container{
-    display: flex;
-}
-
-h2{
-    margin-top: 40px;
-    font-family: sans-serif;
-    font-size: 1.4rem;
-}
-
-.outer-form{
-    background-color: #F5FEFD;
-}
-
-.inner-form{
-    padding-right: 160px;
-}
-
-.lower-form{
-    width: 107.5%;
-    margin-top: 100px;
-    background-color: #fff;
-    padding: 20px;
-    padding-left: 50px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
-
-.form-heading{
-    font-size: 30px;
-    font-family: sans-serif;
-    font-weight: 400;
-}
-
-form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-form label{
-    display: block;
-}
-
-input{
-    width: 90%;
-    padding: 13px;
-}
-
-.form-elements{
-    width: 100%;
-    padding-right: 50px;
-}
-
-.upper-form{
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 200px;
-}
-
-.btn{
-    margin-top: 60px;
-    padding-left: 50px;
-}
-
-button{
+@media only screen and (max-width: 700px){
+    body{
+        margin: 0;
+    }
     
-    background-color: #2E8B57;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: 14px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border: none;
-    border-radius: 8px;
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-family: norse;
+        color: white;
+        font-size: 80px;
+    }
+    
+    .img-group{
+        background-image: url('/halie-west-25xggax4bSA-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .odin-logo{
+        padding: 0px 7px;
+        width: 90px;
+        height: 120px;
+    }
+    
+    .logo{
+        padding: 30px;
+    }
+    
+    .form-elements{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .form-elements input[type = 'text'], input[type = 'email'], input[type = 'tel'], input[type = 'password']{
+        background-color: #FFFFFF;
+      border: 1px solid #D6D9DC;
+      border-radius: 3px;
+      width: 100%;
+      padding: 7px;
+      font-size: 14px;
+    }
+    
+    .form-elements label{
+        margin-bottom: 15px;
+    }
+
+    h2{
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 40px;
+        margin: 0;
+    }
+
+    .you{
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+    
+    .form-heading{
+        display: block;
+        width: 100%;
+        font-family: sans-serif;
+        font-size: 23px;
+        text-align: center;
+        padding-bottom: 20px;
+        color: black;
+    }
+
+    .lower-form{
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        padding-bottom: 0;
+        color: #555555;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .btn{
+        text-align: center;
+    }
+
+    input[type = "submit"]{
+        background-color: #2E8B57;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        width: 300px;
+    }
+
+    .login{
+        font-family: sans-serif;
+        font-size: larger;
+        font-weight: 500;
+    }
+
+    .login a{
+        font-weight: 600;
+        text-decoration: none;
+        color: #4F7942;
+    }
+
+    .btn{
+        margin-top: 30px;
+    }
+
 }
 
-button:hover{
-    background-color:  #9DC183;
-}
 
-.login{
-    padding-left: 55px;
-    font-family: sans-serif;
-    font-size: larger;
-    font-weight: 500;
-}
 
-.login a{
-    font-weight: 600;
-    text-decoration: none;
-    color: #4F7942;
-}
+@media only screen and (min-width: 700px){
 
-a:hover{
-    color: #444C38;
+    body{
+        margin: 0;
+    }
+
+    .img-group{
+        background-image: url('/halie-west-25xggax4bSA-unsplash.jpg');
+        background-size:cover;
+        width: 900px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .logo{
+        text-align: center;
+        width: 100%;
+        background-color: rgba(0,0,0,.5);
+        color: #fff;
+        margin-bottom: 200px;
+        padding: 20px;
+    }
+
+    .odin-logo{
+        width: 100px;
+        height: 130px;
+    }
+
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-family: norse;
+        font-size: 100px;
+    }
+
+    .container{
+        display: flex;
+    }
+
+    h2{
+        margin-top: 40px;
+        font-family: sans-serif;
+        font-size: 1.4rem;
+    }
+
+    .outer-form{
+        background-color: #F5FEFD;
+    }
+
+    .inner-form{
+        padding-right: 160px;
+    }
+
+    .lower-form{
+        width: 107.5%;
+        margin-top: 60px;
+        background-color: #fff;
+        padding: 20px;
+        padding-left: 50px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+
+    .form-heading{
+        font-size: 30px;
+        font-family: sans-serif;
+        font-weight: 400;
+        color: #555555;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    form label{
+        display: block;
+    }
+
+    input{
+        width: 90%;
+        padding: 13px;
+        border: 2px solid #55555541;
+    }
+
+    .form-elements{
+        width: 100%;
+        padding-right: 50px;
+    }
+
+    .upper-form{
+        padding: 20px;
+        padding-left: 50px;
+        padding-right: 100px;
+        margin-top: 50px;
+    }
+
+    .btn{
+        margin-top: 60px;
+        padding-left: 50px;
+    }
+
+    button{
+        background-color: #2E8B57;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 14px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border: none;
+        border-radius: 8px;
+    }
+
+
+    .login{
+        font-family: sans-serif;
+        font-size: larger;
+        font-weight: 500;
+    }
+
+    .login a{
+        font-weight: 600;
+        text-decoration: none;
+        color: #4F7942;
+    }
+
+    a:hover{
+        color: #444C38;
+    }
+
+    input[type = "submit"]{
+        background-color: #2E8B57;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        width: 300px;
+    }
+
+    input[type = "submit"]:hover{
+        background-color:  #9DC183;
+    }
+
+    label{
+        font-weight: 600;
+        color: #434242;
+    }
+
+    input:focus{
+        box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    }
+
 }
